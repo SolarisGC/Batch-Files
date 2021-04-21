@@ -16,13 +16,13 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 cls
 color 70
 set /p login=Username: 
-if %login% == luf1 goto password
-if not %login% == luf1 goto incorrect
+if %login% == "TIRE AS ASPAS E COLOQUE UM USUARIO DE LOGIN" goto password
+if not %login% == "TIRE AS ASPAS E COLOQUE UM USUARIO DE LOGIN" goto incorrect
 :password
 set /p pass=Password:
 
-if %pass% == admin goto success
-if not %pass% == admin goto incorrect
+if %pass% == "TIRE AS ASPAS E COLOQUE UMA SENHA" goto success
+if not %pass% == "TIRE AS ASPAS E COLOQUE UMA SENHA" incorrect
 :incorrect
 cls
 echo.
